@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Administrator Dashboard</h1>
+        <p>Manage and Resolve Student Grievances</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" style="text-decoration: none; color: #e74c3c;">&larr; Logout</a>
+        
+        <h2>Active Complaints</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Student ID</th>
+                    <th>Dept ID</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>2026-04-01</td>
+                    <td>Technical</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>WiFi not working</td>
+                    <td style="color: orange;"><b>Pending</b></td>
+                    <td><button class="btn" style="padding: 5px 10px;">Resolve</button></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>2026-04-02</td>
+                    <td>Academic</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>Books not available</td>
+                    <td style="color: orange;"><b>Pending</b></td>
+                    <td><button class="btn" style="padding: 5px 10px;">Resolve</button></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>2026-04-03</td>
+                    <td>Administrative</td>
+                    <td>3</td>
+                    <td>30</td>
+                    <td>Fee issue</td>
+                    <td style="color: orange;"><b>Pending</b></td>
+                    <td><button class="btn" style="padding: 5px 10px;">Resolve</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard - Submit Grievance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Dashboard</h1>
+        <p>Submit a new grievance</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" style="text-decoration: none; color: #e74c3c;">&larr; Logout</a>
+        
+        <h2>Lodge a Complaint</h2>
+        
+        <p><strong>Need help?</strong> Listen to the audio guide on how to file a complaint:</p>
+        <audio controls>
+            <source src="instructions.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <hr>
+
+        <form action="http://localhost:3000/submit_complaint" method="POST">
+            
+            <div class="form-group">
+                <label for="category">Complaint Category:</label>
+                <select id="category" name="category" required>
+                    <option value="Technical">Technical (e.g., WiFi issues)</option>
+                    <option value="Academic">Academic (e.g., Books not available)</option>
+                    <option value="Administrative">Administrative (e.g., Fee issues)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dept_id">Related Department:</label>
+                <select id="dept_id" name="dept_id" required>
+                    <option value="10">IT Department (Block A)</option>
+                    <option value="20">Library (Block B)</option>
+                    <option value="30">Administration (Main Building)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Complaint Description:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe your issue in detail..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Grievance</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
