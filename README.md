@@ -13,7 +13,4 @@ Features:
 - Admin dashboard
 - Status tracking
 
-How to run:
-1. Install Node.js
-2. Run server.js
-3. Open index.html
+
